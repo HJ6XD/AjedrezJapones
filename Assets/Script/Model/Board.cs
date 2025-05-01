@@ -23,9 +23,11 @@ public struct Board
 public struct Square
 {
     int2 coord;
+    public Pieces piece;
     public Square(int x, int y) 
     { 
         coord = new int2(x, y);
+        piece = null;
     }
 
     public int2 GetCoord => coord;
