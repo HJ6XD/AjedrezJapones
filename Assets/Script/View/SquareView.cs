@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using System.Net.NetworkInformation;
+using Unity.Mathematics;
 
 public class SquareView : MonoBehaviour
 {
@@ -20,13 +21,19 @@ public class SquareView : MonoBehaviour
     [SerializeField] Sprite whiteKingSprite;
     [SerializeField] Sprite blackKingSprite;
 
+    Button buttonComponent;
+    int2 gridpos;
+    View view;
     private void Awake()
     {
         pieceText = GetComponentInChildren<TextMeshProUGUI>();
+        buttonComponent = GetComponent<Button>();
         imageComponent.enabled = false;
     }
-    public void SetSquare(int x, int y)
+    public void SetSquare(int x, int y, View _view)
     {
+        this.view = _view;
+        gridpos = new int2(x, y);
         pieceText.text = $"{x}, {y}";
     }
 
@@ -80,5 +87,20 @@ public class SquareView : MonoBehaviour
     {
         pieceText.enabled = true;
         imageComponent.enabled = false;
+    }
+
+    private void OnSelectSquare()
+    {
+        view?.SelectSquare(ref gridpos);
+    }
+
+    private void OnEnable()
+    {
+        buttonComponent.onClick.AddListener(OnSelectSquare);
+    }
+
+    private void OnDisable()
+    {
+        buttonComponent.onClick.RemoveListener(OnSelectSquare);
     }
 }

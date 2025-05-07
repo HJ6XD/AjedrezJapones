@@ -24,7 +24,7 @@ public class View : MonoBehaviour
             {
                 gridView[i,j] = Instantiate(tilePrefab, gridParent).GetComponent<SquareView>();
                 int2 coords = board.GetSquare(i, j).GetCoord;
-                gridView[i,j].SetSquare(coords.x, coords.y);
+                gridView[i,j].SetSquare(coords.x, coords.y, this);
             }
         }
     }
@@ -32,5 +32,15 @@ public class View : MonoBehaviour
     public void AddPiece(ref Pieces _piece, int2 _coor)
     {
         gridView[_coor.x, _coor.y].AddPiece(ref _piece);
+    }
+
+    public void RemovePiece(int2 coor)
+    {
+        gridView[coor.x, coor.y].RemovePiece();
+    }
+
+    public void SelectSquare(ref int2 gridpos)
+    {
+        controller.SelectSquare(gridpos);
     }
 }
