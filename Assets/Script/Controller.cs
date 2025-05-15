@@ -9,15 +9,22 @@ public class Controller
     const int ROWS = 9;
     const int COLS = 9;
 
+    Team currentTurn = Team.White;
+
     Pieces selectedPiece = null;
 
+    Player whitePlayer;
+    Player blackPlayer;
     public Board BOARD => board;
     public Controller(View view)
     {
         this.view = view;
         board = new Board(ROWS, COLS);
         view.CreateGrid(ref board, ROWS, COLS);
+        whitePlayer = new Player(Team.White);
+        blackPlayer = new Player(Team.Black);
         SetBoard();
+        view.EnableTeamCementery(currentTurn);
     }
     ~Controller() { }
 
@@ -118,23 +125,70 @@ public class Controller
         view.AddPiece(ref piece, coor);
     }
 
-    void EatPiece()
+    void EatPiece(ref Pieces eatenPiece)
     {
+        eatenPiece.coor = new int2(-1, -1);
+        eatenPiece.team = currentTurn;
+        Player currentPlayer = currentTurn == Team.White ? whitePlayer : blackPlayer;
 
+
+        switch (eatenPiece.type) { 
+
+            case PieceType.Pawn:
+                currentPlayer.sideBoard.pawnQ.Enqueue((Pawn)eatenPiece);
+                view.UpdateCementery(currentTurn, eatenPiece.type, currentPlayer.sideBoard.pawnQ.Count);
+                break;
+
+            case PieceType.Spear:
+                currentPlayer.sideBoard.spearQ.Enqueue((Spear)eatenPiece);
+                view.UpdateCementery(currentTurn, eatenPiece.type, currentPlayer.sideBoard.spearQ.Count);
+                break;
+
+            case PieceType.Horse:
+                currentPlayer.sideBoard.horseQ.Enqueue((Horse)eatenPiece);
+                view.UpdateCementery(currentTurn, eatenPiece.type, currentPlayer.sideBoard.horseQ.Count);
+                break;
+
+            case PieceType.Silver:
+                currentPlayer.sideBoard.SilverQ.Enqueue((Silver)eatenPiece);
+                view.UpdateCementery(currentTurn, eatenPiece.type, currentPlayer.sideBoard.SilverQ.Count);
+                break;
+
+            case PieceType.Gold:
+                currentPlayer.sideBoard.goldQ.Enqueue((Gold)eatenPiece);
+                view.UpdateCementery(currentTurn, eatenPiece.type, currentPlayer.sideBoard.goldQ.Count);
+                break;
+
+            case PieceType.Tower:
+                currentPlayer.sideBoard.towerQ.Enqueue((Tower)eatenPiece);
+                view.UpdateCementery(currentTurn, eatenPiece.type, currentPlayer.sideBoard.towerQ.Count);
+                break;
+
+            case PieceType.Bishop:
+                currentPlayer.sideBoard.bishopQ.Enqueue((Bishop)eatenPiece);
+                view.UpdateCementery(currentTurn, eatenPiece.type, currentPlayer.sideBoard.bishopQ.Count);
+                break;
+        }
     }
 
     public void SelectSquare(int2 gridPos)
     {
         ref Square selectedSquare = ref board.GetSquare(gridPos.x, gridPos.y);
         if (selectedPiece != null) {
-            if (selectedSquare.piece == null)
+            if (selectedSquare.piece == null) {
+                if (selectedPiece.coor.x < 0)
+                    UpdateCementeryCount(selectedPiece.type);
                 MoveSelectedPiece(selectedSquare);
-
-            else if(selectedSquare.piece.team == Team.White)
+            }
+            else if (selectedSquare.piece.team == currentTurn)   // Cambiar Seleccion
+            {
+                if (selectedPiece.coor.x < 0)
+                    EatPiece(ref selectedPiece);
                 selectedPiece = selectedSquare.piece;
-
-            else {
-                EatPiece();
+            } 
+            else if(selectedPiece.coor.x >= 0)
+            {
+                EatPiece(ref selectedSquare.piece);
                 MoveSelectedPiece(selectedSquare);
             }
         }
@@ -142,15 +196,70 @@ public class Controller
         else
         {
             if (selectedSquare.piece == null) return;
-            if (selectedSquare.piece.team == Team.Black) return;
+            if (selectedSquare.piece.team != currentTurn) return;
             selectedPiece = selectedSquare.piece;
         }
     }
 
     void MoveSelectedPiece(Square selectedSquare)
     {
-        RemovePiece(selectedPiece.coor);
+        if (selectedPiece.coor.x >= 0)
+            RemovePiece(selectedPiece.coor); 
+
         AddPiece(ref selectedPiece, selectedSquare.GetCoord);
         selectedPiece = null;
+    }
+
+    void UpdateCementeryCount(PieceType pieceType)
+    {
+        Player currentPlayer = currentTurn == Team.White ? whitePlayer : blackPlayer;
+
+        switch (pieceType)
+        {
+
+            case PieceType.Pawn:
+                view.UpdateCementery(currentTurn, pieceType, currentPlayer.sideBoard.pawnQ.Count);
+                break;
+
+            case PieceType.Spear:
+                view.UpdateCementery(currentTurn, pieceType, currentPlayer.sideBoard.spearQ.Count);
+                break;
+
+            case PieceType.Horse:
+                view.UpdateCementery(currentTurn, pieceType, currentPlayer.sideBoard.horseQ.Count);
+                break;
+
+            case PieceType.Silver:
+                view.UpdateCementery(currentTurn, pieceType, currentPlayer.sideBoard.SilverQ.Count);
+                break;
+
+            case PieceType.Gold:
+                view.UpdateCementery(currentTurn, pieceType, currentPlayer.sideBoard.goldQ.Count);
+                break;
+
+            case PieceType.Tower:
+                view.UpdateCementery(currentTurn, pieceType, currentPlayer.sideBoard.towerQ.Count);
+                break;
+
+            case PieceType.Bishop:
+                view.UpdateCementery(currentTurn, pieceType, currentPlayer.sideBoard.bishopQ.Count);
+                break;
+        }
+    }
+
+    public void SelectCementarySquare(PieceType _pieceType)
+    {
+        Player currentPlayer = currentTurn == Team.White? whitePlayer : blackPlayer;
+        selectedPiece = _pieceType switch
+        {
+            PieceType.Pawn => currentPlayer.sideBoard.pawnQ.Dequeue(),
+            PieceType.Spear => currentPlayer.sideBoard.spearQ.Dequeue(),
+            PieceType.Horse => currentPlayer.sideBoard.horseQ.Dequeue(),
+            PieceType.Silver => currentPlayer.sideBoard.SilverQ.Dequeue(),
+            PieceType.Gold => currentPlayer.sideBoard.goldQ.Dequeue(),
+            PieceType.Tower => currentPlayer.sideBoard.towerQ.Dequeue(),
+            PieceType.Bishop => currentPlayer.sideBoard.bishopQ.Dequeue(),
+            _ => null
+        };
     }
 }

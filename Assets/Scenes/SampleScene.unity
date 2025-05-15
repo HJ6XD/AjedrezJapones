@@ -119,6 +119,17 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!114 &44163654 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 1520122664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &92531569 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
@@ -136,9 +147,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1562433470, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 202117360}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (4)
+      value: gold cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -242,9 +257,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -61755286, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 1179028206}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (1)
+      value: spear cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -348,9 +367,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1562433470, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 1775932820}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (4)
+      value: gold cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -437,6 +460,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+--- !u!114 &202117360 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 123018418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &285854765 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 562555590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &305469788
 GameObject:
   m_ObjectHideFlags: 0
@@ -572,6 +617,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tilePrefab: {fileID: 7777183021662626966, guid: 20ad85b042783cf4ea5a2f39910a7306, type: 3}
   gridParent: {fileID: 473671881}
+  whiteCementery: {fileID: 1893425769}
+  blackCementery: {fileID: 1313452657}
 --- !u!4 &337298690
 Transform:
   m_ObjectHideFlags: 0
@@ -599,9 +646,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 662849091, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 1535566649}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (6)
+      value: bishop cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -753,6 +804,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
   m_PrefabInstance: {fileID: 538619355}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &516509835 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 538619355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,9 +964,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2951168373908222502, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 2020170776}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (2)
+      value: horse cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -1003,9 +1069,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1947770760, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 285854765}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (3)
+      value: silver cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -1181,6 +1251,28 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
   m_PrefabInstance: {fileID: 879921407}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &639754444 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 879921407}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &662817362 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 1636841135}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &666913239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1193,9 +1285,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1947770760, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 715772742}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (3)
+      value: silver cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -1282,6 +1378,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+--- !u!114 &715772742 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 666913239}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &717063533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1294,9 +1401,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 662849091, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 1607328975}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (6)
+      value: bishop cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -1393,6 +1504,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
   m_PrefabInstance: {fileID: 467881970}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &820644924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 467881970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &879921407
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1405,9 +1527,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1908644719, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 1914004550}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell
+      value: pawn cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -1494,6 +1620,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+--- !u!114 &925591105 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 2234740646059649901}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &972321094 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
@@ -1504,16 +1641,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
   m_PrefabInstance: {fileID: 666913239}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1085890631 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 666913239}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1089801916 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
   m_PrefabInstance: {fileID: 134874998}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1089801920 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 134874998}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1179028206 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 134874998}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1256603187 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 2234740646059649901}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &1299369737 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
   m_PrefabInstance: {fileID: 1653167672}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1299369741 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 1653167672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1313452654
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,6 +1716,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1313452655}
   - component: {fileID: 1313452656}
+  - component: {fileID: 1313452657}
   m_Layer: 5
   m_Name: CementerioB
   m_TagString: Untagged
@@ -1583,6 +1776,36 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1313452657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313452654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9af8619201a5a48bafab0f56c659e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pawnView: {fileID: 639754444}
+  spearView: {fileID: 1089801920}
+  horseView: {fileID: 516509835}
+  silverView: {fileID: 1797680704}
+  goldView: {fileID: 1715536787}
+  towerView: {fileID: 1299369741}
+  bishopView: {fileID: 820644924}
+--- !u!114 &1485762244 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 1520122664}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1520122664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1595,9 +1818,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -61755286, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 44163654}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (1)
+      value: spear cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -1684,6 +1911,28 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+--- !u!114 &1535566649 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 467881970}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1594103832 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 1597800852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1597800852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1696,9 +1945,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2091424623, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 1594103832}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (5)
+      value: tower cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -1785,6 +2038,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+--- !u!114 &1607328975 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 717063533}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1636841135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1797,9 +2061,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2951168373908222502, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 662817362}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (2)
+      value: horse cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -1898,9 +2166,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2091424623, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 2039702619}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell (5)
+      value: tower cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x
@@ -1997,6 +2269,50 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
   m_PrefabInstance: {fileID: 177658434}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1715536787 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 177658434}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1742325216 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 123018418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1775932820 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 177658434}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1797680704 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 562555590}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1893425766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2007,6 +2323,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1893425767}
   - component: {fileID: 1893425768}
+  - component: {fileID: 1893425769}
   m_Layer: 5
   m_Name: CementerioW
   m_TagString: Untagged
@@ -2066,6 +2383,58 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
+--- !u!114 &1893425769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893425766}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9af8619201a5a48bafab0f56c659e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pawnView: {fileID: 1256603187}
+  spearView: {fileID: 1485762244}
+  horseView: {fileID: 1950572859}
+  silverView: {fileID: 1085890631}
+  goldView: {fileID: 1742325216}
+  towerView: {fileID: 1963394888}
+  bishopView: {fileID: 2036615895}
+--- !u!114 &1914004550 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 879921407}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1950572859 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 1636841135}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1963394888 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 1597800852}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1970814453
 GameObject:
   m_ObjectHideFlags: 0
@@ -2145,11 +2514,44 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2020170776 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 538619355}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &2036615891 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
   m_PrefabInstance: {fileID: 717063533}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2036615895 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 717063533}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2039702619 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+  m_PrefabInstance: {fileID: 1653167672}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2234740646059649901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2162,9 +2564,13 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1908644719, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
+    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
+      propertyPath: countText
+      value: 
+      objectReference: {fileID: 925591105}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
-      value: CementeryCell
+      value: pawn cell
       objectReference: {fileID: 0}
     - target: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Pivot.x

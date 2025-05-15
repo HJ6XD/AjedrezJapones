@@ -148,6 +148,7 @@ GameObject:
   - component: {fileID: 332247922764504192}
   - component: {fileID: 795861934865504934}
   - component: {fileID: 8252820838423772940}
+  - component: {fileID: 7240560642290518713}
   m_Layer: 5
   m_Name: CementeryCell
   m_TagString: Untagged
@@ -257,6 +258,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7240560642290518713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7597584698033345799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countText: {fileID: 0}
 --- !u!1 &7683126718786829188
 GameObject:
   m_ObjectHideFlags: 0
