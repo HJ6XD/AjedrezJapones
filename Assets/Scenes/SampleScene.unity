@@ -119,17 +119,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!114 &44163654 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 1520122664}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &92531569 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
@@ -147,10 +136,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1562433470, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 202117360}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: gold cell
@@ -257,10 +242,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -61755286, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 1179028206}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: spear cell
@@ -367,10 +348,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1562433470, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 1775932820}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: gold cell
@@ -460,28 +437,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
---- !u!114 &202117360 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 123018418}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &285854765 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 562555590}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &305469788
 GameObject:
   m_ObjectHideFlags: 0
@@ -646,10 +601,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 662849091, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 1535566649}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: bishop cell
@@ -964,10 +915,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2951168373908222502, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 2020170776}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: horse cell
@@ -1069,10 +1016,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1947770760, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 285854765}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: silver cell
@@ -1262,17 +1205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &662817362 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 1636841135}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &666913239
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1285,10 +1217,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1947770760, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 715772742}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: silver cell
@@ -1378,17 +1306,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
---- !u!114 &715772742 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 666913239}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &717063533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1401,10 +1318,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 662849091, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 1607328975}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: bishop cell
@@ -1527,10 +1440,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1908644719, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 1914004550}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: pawn cell
@@ -1620,17 +1529,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
---- !u!114 &925591105 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 2234740646059649901}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &972321094 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
@@ -1666,17 +1564,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1179028206 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 134874998}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1256603187 stripped
@@ -1818,10 +1705,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -61755286, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 44163654}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: spear cell
@@ -1911,28 +1794,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
---- !u!114 &1535566649 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 467881970}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1594103832 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 1597800852}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1597800852
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1945,10 +1806,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2091424623, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 1594103832}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: tower cell
@@ -2038,17 +1895,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
---- !u!114 &1607328975 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 717063533}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1636841135
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2061,10 +1907,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -2951168373908222502, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 662817362}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: horse cell
@@ -2166,10 +2008,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 2091424623, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 2039702619}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: tower cell
@@ -2291,17 +2129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1775932820 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 177658434}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1797680704 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
@@ -2402,17 +2229,6 @@ MonoBehaviour:
   goldView: {fileID: 1742325216}
   towerView: {fileID: 1963394888}
   bishopView: {fileID: 2036615895}
---- !u!114 &1914004550 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 879921407}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1950572859 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
@@ -2514,17 +2330,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2020170776 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 538619355}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!224 &2036615891 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8149793745577801526, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
@@ -2541,17 +2346,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56e3ff8b928b2a94d88aa87c818b2f2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2039702619 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2150427602477071500, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-  m_PrefabInstance: {fileID: 1653167672}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2234740646059649901
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2564,10 +2358,6 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1908644719, guid: 52c991693f5b1a54fbd15ce366269996, type: 3}
-    - target: {fileID: 7240560642290518713, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
-      propertyPath: countText
-      value: 
-      objectReference: {fileID: 925591105}
     - target: {fileID: 7597584698033345799, guid: 81492ade9fe6f4e41bb2a84effbadc97, type: 3}
       propertyPath: m_Name
       value: pawn cell

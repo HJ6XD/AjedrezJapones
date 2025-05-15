@@ -13,13 +13,10 @@ public class View : MonoBehaviour
     [SerializeField] CementeryView blackCementery;
 
     SquareView[,] gridView;
-    private void Awake()
-    {
-        controller = new Controller(this);
-    }
 
     private void Start()
     {
+        controller = new Controller(this);
         whiteCementery.SetCementeryCellsView(this);
         blackCementery.SetCementeryCellsView(this);
     }
