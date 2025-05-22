@@ -1,5 +1,8 @@
 using UnityEngine;
 using Unity.Mathematics;
+using NUnit.Framework;
+using System.Collections.Generic;
+using UnityEngine.UIElements;
 
 public class Controller
 {
@@ -15,6 +18,8 @@ public class Controller
 
     Player whitePlayer;
     Player blackPlayer;
+
+    List<int2> validMoves = new List<int2>();
     public Board BOARD => board;
     public Controller(View view)
     {
@@ -175,21 +180,28 @@ public class Controller
     {
         ref Square selectedSquare = ref board.GetSquare(gridPos.x, gridPos.y);
         if (selectedPiece != null) {
-            if (selectedSquare.piece == null) {
+            if (selectedSquare.piece == null) { // Move Piece
+                if (!IsValidMove(selectedSquare.GetCoord) && selectedPiece.coor.x >0) return;
                 if (selectedPiece.coor.x < 0)
                     UpdateCementeryCount(selectedPiece.type);
                 MoveSelectedPiece(selectedSquare);
+                currentTurn = currentTurn == Team.White ? Team.Black : Team.White;
+                    
             }
             else if (selectedSquare.piece.team == currentTurn)   // Cambiar Seleccion
             {
                 if (selectedPiece.coor.x < 0)
                     EatPiece(ref selectedPiece);
                 selectedPiece = selectedSquare.piece;
-            } 
-            else if(selectedPiece.coor.x >= 0)
+                SelectNewPiece(selectedSquare.piece);
+            }
+            else if(selectedPiece.coor.x >= 0) //Eat Piece
             {
+                if (!IsValidMove(selectedSquare.GetCoord)) return;
                 EatPiece(ref selectedSquare.piece);
                 MoveSelectedPiece(selectedSquare);
+                currentTurn = currentTurn == Team.White ? Team.Black : Team.White;
+                
             }
         }
 
@@ -197,7 +209,54 @@ public class Controller
         {
             if (selectedSquare.piece == null) return;
             if (selectedSquare.piece.team != currentTurn) return;
-            selectedPiece = selectedSquare.piece;
+            SelectNewPiece(selectedSquare.piece);
+        }
+    }
+    bool IsValidMove(int2 move)
+    {
+        foreach (int2 validMove in validMoves) {
+            if (move.x != validMove.x) continue;
+            if (move.y == validMove.y) return true;
+        }
+        return false;
+    }
+    void SelectNewPiece(Pieces piece)
+    {
+        selectedPiece = piece;
+        validMoves.Clear();
+        List<int2>pieceMoves = selectedPiece.GetMoves();
+        int2 pieceCoor = selectedPiece.coor;
+
+        if (selectedPiece.GetType().IsSubclassOf(typeof(SingleMovePiece))) {
+            foreach (int2 move in pieceMoves) { 
+                int2 newCoor;
+                newCoor.x = move.x;
+                newCoor.y = currentTurn == Team.White ? move.y : -move.y;
+                newCoor += pieceCoor;
+                if (newCoor.x < 0 || newCoor.x >= ROWS) continue;
+                if (newCoor.y < 0 || newCoor.y >= COLS) continue;
+                if(board.GetSquare(newCoor.x, newCoor.y).piece != null)
+                {
+                    if (board.GetSquare(newCoor.x, newCoor.y).piece.team == currentTurn) continue;
+                }
+                validMoves.Add(newCoor);
+            }
+        }
+        else if(selectedPiece.GetType().IsSubclassOf(typeof(DirectionalMovePiece))){
+            foreach (int2 direction in pieceMoves) { 
+                for(int i = 1; i <=8; i++) {
+                    int2 newCoor = pieceCoor + direction * i;
+                    if (newCoor.x < 0 || newCoor.x >= ROWS) break;
+                    if (newCoor.y < 0 || newCoor.y >= COLS) break;
+                    if(board.GetSquare(newCoor.x, newCoor.y).piece != null)
+                    {
+                        if (board.GetSquare(newCoor.x, newCoor.y).piece.team == currentTurn) break;
+                        validMoves.Add(newCoor);
+                        break;
+                    }
+                    validMoves.Add(newCoor);
+                }
+            }
         }
     }
 
